@@ -1,0 +1,16 @@
+/bin
+/build
+/Web-Content/WEB-INF/lib/*.jar
+
+*.class
+
+
+# Package Files #
+
+*.jar
+!/lib/ivy-2.3.0.jar
+
+*.war
+
+*.ear
+
