@@ -1,42 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
-  <display-name>Hellokas</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
+  <display-name>Kolmas</display-name>
+   <listener>
+    <listener-class>listener.ServletContextInitializer</listener-class>
+  </listener>
   <servlet>
     <description></description>
-    <display-name>HomePage</display-name>
-    <servlet-name>HomePage</servlet-name>
-    <servlet-class>i377.HomePage</servlet-class>
+    <display-name>Search</display-name>
+    <servlet-name>Search</servlet-name>
+    <servlet-class>servlet.Search</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>HomePage</servlet-name>
-    <url-pattern>/HomePage</url-pattern>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/Search</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>SessionCount</display-name>
-    <servlet-name>SessionCount</servlet-name>
-    <servlet-class>i377.SessionCount</servlet-class>
+    <display-name>Add</display-name>
+    <servlet-name>Add</servlet-name>
+    <servlet-class>servlet.Add</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>SessionCount</servlet-name>
-    <url-pattern>/SessionCount</url-pattern>
+    <servlet-name>Add</servlet-name>
+    <url-pattern>/Add</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>Hello</display-name>
-    <servlet-name>Hello</servlet-name>
-    <servlet-class>Hello</servlet-class>
+    <display-name>Delete</display-name>
+    <servlet-name>Delete</servlet-name>
+    <servlet-class>servlet.Delete</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Hello</servlet-name>
-    <url-pattern>/Hello</url-pattern>
+    <servlet-name>Delete</servlet-name>
+    <url-pattern>/Delete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>InsertSamples</display-name>
+    <servlet-name>InsertSamples</servlet-name>
+    <servlet-class>servlet.InsertSamples</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertSamples</servlet-name>
+    <url-pattern>/InsertSamples</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>testServ</display-name>
+    <servlet-name>testServ</servlet-name>
+    <servlet-class>servlet.testServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>testServ</servlet-name>
+    <url-pattern>/testServ</url-pattern>
   </servlet-mapping>
 </web-app>
